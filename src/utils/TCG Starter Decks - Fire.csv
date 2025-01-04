@@ -1,0 +1,55 @@
+Card Name,Description,Mana Cost,Power Level,Health,,Is implemented?
+Flame Warrior,Haste - Can attack on the same turn it is played.,2,4,2,,Yes
+Pyro mage,Deal 1 damage to all enemy units immediately when played.,3,5,2,,"yes, testing required"
+Inferno Knight,Charge - Can attack opponent face directly ignoring enemies once.,4,5,2,,
+Blazing Archer,On play. deal 2 damage to an enemy unit.,1,3,1,,"yes, testing required"
+Lava Pool,Splash - Deals 1 damage to adjacent units of the target of attack.,2,4,3,,"yes, testing required"
+Fire Elemental ,Aura of Fire - Deals 1 damage to all enemies at the end of each turn.,5,8,5,,"yes, testing required"
+Searing Swordsman,Double Strike - Attacks twice,3,6,3,,"yes, testing required"
+Molten Giant,Overwhelm - Excess damage to units is dealt to the enemy hero.,5,9,4,,"yes, testing required"
+Ember Spirit,Elusive - Cannot be targeted by spells or traps.,2,5,2,,"yes, testing required"
+Volcanic Drake,Flying - Can only be blocked by other flying creatures.,5,6,4,,"yes, testing required"
+Cinder Beast,On Activate: Take 1 damage to gain +1 attack.,3,2,7,,"yes, testing required"
+Spark Sorcerer,Deal 3 damage split randomly among enemy units.,3,3,2,,"yes, testing required"
+Flame Witch,"Flying, Mana Reduction - All spells in your hand cost 1 less mana, as long as this remains in play.",3,5,2,,"yes, testing required"
+Burnout Banshee,"Flying, Silence - Target character cannot use abilities. ",2,4,1,,"yes, testing required"
+Heat Haze Harpy,"Flying, Evade - 50% chance to dodge incoming attacks.",2,4,3,,"yes, testing required"
+Scorching Paladin,Taunt - Enemy units must attack this one if able.,4,3,6,,"yes, testing required"
+Ember Enchanter,Hot - Deal 1 damage to any target.,1,2,2,,"yes, testing required"
+Wildfire Wyrm,On Activate: Take 1 damage to gain +1 attack.,3,1,8,,"yes, testing required"
+Infernal Imp,Trickster - Forces an enemy unit to attack it.,4,6,1,,"yes, testing required"
+Magma Mauler,Overwhelm - Excess damage to units is dealt to the enemy hero.,4,6,5,,"yes, testing required"
+Charred Chieftain,Rally - Boosts the attack of adjacent units by 1.,3,5,3,,
+Firebrand Fiend,Immolate - You may sacrifice at end of turn to deal 3 damage to all enemy units.,4,7,3,,
+Blistering Wizard,Scorch - Enemy units damaged by this lose 1 attack.,5,9,2,,
+Flare Knight,"Armor Pierce - Ignores enemy armor when attacking opponent player face, if any.",2,4,5,,
+Coal Colossus,Taunt - Enemy units must attack this one if able.,3,3,4,,
+Pyre Priest,Heal - Restores 2 health to your hero when played.,1,3,2,,
+Ablaze Alchemist,Explosive Death - Deals 3 damage to enemy hero upon death.,4,2,3,,
+Sizzle Sprite,Quick - Can move and attack twice this turn.,5,8,2,,
+Combustion Conjurer,Mass Burn - Deals 1 damage to all enemies for 3 turns or until card is destroyed.,5,8,3,,
+Raging Phoenix,Rebirth - Resurrects with 1 health upon death.,3,6,4,,
+Crimson Demon,Demonic Power - Gains attack equal to the number of spells played this turn.,1,3,3,,
+Blaze Battler,First Strike - Deals damage before enemies during combat.,3,6,4,,
+Fiery Fox,Stealth - Cannot be targeted or attacked until it deals damage.,5,9,2,,
+Lava Lurker,Ambush - Deals double damage when attacking from stealth,6,10,3,,
+Inferno Incarnate,Cataclysm - Destroys a random enemy unit when played.,3,2,3,,
+Hellfire Hydra,Multi-Head Attack - Select up to three different targets to attack when card is played.,4,4,6,,
+Smolder Soldier,Guard - Blocks an additional attack each turn.,6,8,4,,
+Sparksplit Shaman,Spark - Deals 1 damage to a random enemy at the start of your turn.,4,7,2,,
+Bonfire Behemoth,Enrage - Gains +2 attack when your hero is damaged.,3,5,6,,
+Ashen Assassin,Assassinate - Destroy a target damaged unit.,4,7,2,,
+Ember Scout,Haste - Can attack on the same turn it is played.,1,1,1,,
+Spark Imp,"When Spark Imp deals combat damage to a player, it deals 1 additional damage.",1,2,1,,
+Flame Sprite,Flying - Can only be blocked by creatures with flying.,1,1,1,,
+Blazing Shiv,Pay 1 life: Blazing Shiv gets +1/+0 until end of turn.,1,1,2,,
+Pyrokinetic Charge,"When Pyrokinetic Charge dies, it deals 1 damage to any target.",1,1,1,,
+Inferno Hound,Haste - Can attack on the same turn it is played.,2,2,1,,
+Fire Acolyte,"At the end of your turn, Fire Acolyte deals 1 damage to each opponent.",2,1,3,,
+Burning Blade Initiate,"When Burning Blade Initiate attacks, it gets +1/+0 until end of turn.",2,2,2,,
+Scorching Squire,"When Scorching Squire enters the battlefield, it deals 1 damage to target creature or player.",2,1,2,,
+Magma Javelineer,"When Magma Javelineer dies, it deals 2 damage to any target.",2,2,1,,
+,,,,,,
+,,,,,,
+,,,,,,
+"Champion, Infernal Overlord","Blaze Command: At the start of your turn, Infernal Overlord deals 4 damage divided as you choose among up to three targets. ",7,6,6,,

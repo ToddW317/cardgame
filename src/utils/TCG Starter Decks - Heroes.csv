@@ -1,0 +1,11 @@
+Hero Name,Ability,Cost,Best Synergy
+"Pyroclast, the Flame Weaver",Fire Bolt: Deal 2 damage to any target. ,2,Fire
+"Terra, Earth Mother",Stone's Gift: Gain 1 additional mana this turn only. (Max 3 uses),0,Earth
+"Zephyr, Wind Caller",Gust of Wind: Return a target creature with 2 or less power to its owner's hand. Costs 1 more Mana every use.,1,Air
+"Naiad, Mistress of the Tides","Calm Waters: Draw the top 3 cards of your deck, then discard 2.",2,Water
+"Erebus, Shadow Master",Veil of Shadows: Give a creature -1/0 until your next turn.,1,Aether
+"Solara, Light Bearer",Healing Light: Restore 3 health to your hero.,2,Colorless
+"Vulcan, Forge Lord",Forge Armor: Give a creature +1/+1 until end of turn.,2,Fire/Earth
+"Celest, Star Seer",Star Gaze: Scry 2,1,Air/Water
+"Orion, Hunter of Depths",Deep Hunt: Exile a target creature with cost of 4 or less. (Max 1 use),2,Aether
+"Gaia, Spirit of Life","Life Bloom: 3 creatures you control, at random, gain ""Whenever this creature deals damage, you gain 1 life. (Max 1 use)",3,Earth
