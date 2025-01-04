@@ -36,14 +36,16 @@ interface GameState {
   turn: number;
 }
 
-interface Deck {
+export interface Deck {
   id: string;
   name: string;
-  hero: Hero;
+  color: string;
   cards: Array<{
-    cardId: CardImageKey;
+    cardId: string;
     count: number;
   }>;
+  isDraft?: boolean;
+  lastModified?: string;
 }
 
 export const DECK_LIMITS = {

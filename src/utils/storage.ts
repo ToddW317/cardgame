@@ -1,7 +1,7 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import type { Deck } from '../types/game';
 
-const DECKS_STORAGE_KEY = '@decks';
+const DECKS_STORAGE_KEY = '@cardgame:decks';
 
 export async function saveDecks(decks: Deck[]): Promise<void> {
   try {
@@ -18,5 +18,13 @@ export async function loadDecks(): Promise<Deck[]> {
   } catch (error) {
     console.error('Error loading decks:', error);
     return [];
+  }
+}
+
+export async function clearDecks(): Promise<void> {
+  try {
+    await AsyncStorage.removeItem(DECKS_STORAGE_KEY);
+  } catch (error) {
+    console.error('Error clearing decks:', error);
   }
 } 
