@@ -7,10 +7,53 @@ import { DecksScreen } from '../screens/DecksScreen';
 import { CreateDeckScreen } from '../screens/CreateDeckScreen';
 import { DeckBuilderScreen } from '../screens/DeckBuilderScreen';
 import { DeckDetailsScreen } from '../screens/DeckDetailsScreen';
+import { GameScreen } from '../screens/GameScreen';
 
-// Create the navigators
+// First, create a Root Stack that will contain both Tab Navigator and Game Screen
+const RootStack = createNativeStackNavigator<RootStackParamList>();
 const Tab = createBottomTabNavigator();
-const DeckStack = createNativeStackNavigator<RootStackParamList>();
+
+// Move the TabNavigator to its own component
+function TabNavigator() {
+  return (
+    <Tab.Navigator
+      screenOptions={{
+        tabBarStyle: { backgroundColor: '#1a1a1a' },
+        tabBarActiveTintColor: '#ff4d4d',
+        tabBarInactiveTintColor: '#666',
+        headerShown: false,
+      }}
+    >
+      <Tab.Screen 
+        name="Home" 
+        component={HomeScreen}
+        options={{
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="home" size={size} color={color} />
+          ),
+        }}
+      />
+      <Tab.Screen 
+        name="Collection" 
+        component={CollectionScreen}
+        options={{
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="grid" size={size} color={color} />
+          ),
+        }}
+      />
+      <Tab.Screen 
+        name="Decks" 
+        component={DeckStackNavigator}
+        options={{
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="albums" size={size} color={color} />
+          ),
+        }}
+      />
+    </Tab.Navigator>
+  );
+}
 
 // Stack navigator for the Decks tab
 function DeckStackNavigator() {
@@ -57,48 +100,37 @@ function DeckStackNavigator() {
         component={DeckDetailsScreen}
         options={{ title: 'Deck Details' }}
       />
+      <DeckStack.Screen 
+        name="Game" 
+        component={GameScreen}
+        options={{ 
+          headerShown: false,
+          animation: 'fade',
+          gestureEnabled: false
+        }}
+      />
     </DeckStack.Navigator>
   );
 }
 
-// Main tab navigator
-export function TabNavigator() {
+// Export the Root Navigator instead of Tab Navigator
+export function RootNavigator() {
   return (
-    <Tab.Navigator
-      screenOptions={{
-        tabBarStyle: { backgroundColor: '#1a1a1a' },
-        tabBarActiveTintColor: '#ff4d4d',
-        tabBarInactiveTintColor: '#666',
-        headerShown: false,
-      }}
-    >
-      <Tab.Screen 
-        name="Home" 
-        component={HomeScreen}
-        options={{
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="home" size={size} color={color} />
-          ),
+    <RootStack.Navigator>
+      <RootStack.Screen 
+        name="MainTabs" 
+        component={TabNavigator} 
+        options={{ headerShown: false }}
+      />
+      <RootStack.Screen 
+        name="Game" 
+        component={GameScreen}
+        options={{ 
+          headerShown: false,
+          animation: 'fade',
+          gestureEnabled: false
         }}
       />
-      <Tab.Screen 
-        name="Collection" 
-        component={CollectionScreen}
-        options={{
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="grid" size={size} color={color} />
-          ),
-        }}
-      />
-      <Tab.Screen 
-        name="Decks" 
-        component={DeckStackNavigator}
-        options={{
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="albums" size={size} color={color} />
-          ),
-        }}
-      />
-    </Tab.Navigator>
+    </RootStack.Navigator>
   );
 } 

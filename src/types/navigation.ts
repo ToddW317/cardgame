@@ -1,4 +1,6 @@
 export type RootStackParamList = {
+  MainTabs: undefined;
+  Game: undefined;
   Home: undefined;
   Collection: undefined;
   Decks: undefined;
